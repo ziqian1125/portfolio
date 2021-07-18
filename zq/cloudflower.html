@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>flex-layout</title>
+	<link rel="stylesheet" href="dist/flex-layout.css">
+	<link rel="stylesheet" href="example/layout.css">
+	<link rel="stylesheet" href="example/index.css">
+
+	<!-- <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+</head>
+<body>
+	<div class="m-container flex-row">
+		<div class="m-header flex-column flex-middle" >
+			<h1 class="logo">
+				<a href="album/rindex.html" >Home</a>
+			</h1>
+			<!-- <small class="subtitle">基于flexbox的栅格化布局库，提供更直观、丰富的布局方式</small> -->
+			<div class="menu">
+				<a href="https://github.com/Coffcer/flex-layout">Github</a>
+			</div>
+		</div>
+		<div class="m-content flex-column flex-item">
+			<div class="m-sidebar" >
+				<ul class="m-nav" style="position: fixed;">
+					<li class="active">
+						<a href="#summary">Overview</a>
+					</li>
+					<li>
+						<a href="#usage">Design Process</a>
+					</li>
+					<!-- <li>
+						<a href="#responsive">Iteration</a>
+					</li> -->
+					<li>
+						<a href="#example">Final product</a>
+					</li>
+				</ul>
+			</div>
+			<div class="m-main">
+				<div id="summary" class="panel">
+					<h2>Puzzle Game:Cloud and Flower</h2>
+					<!-- <p>flex-layout基于24个栅格布局，与传统栅格化的使用方式类同，但提供了更直观、丰富的布局方式。</p> -->
+					<div style="text-align: center;margin: 0 auto;">
+						<img src="image/cloudcover.png" style="width: 80%;">
+					</div>					<!-- <div class="demo demo1">
+						<div class="flex-column">
+							<div class="flex-item-24">flex-item-24</div>
+							<div class="flex-item-12">flex-item-12</div>
+							<div class="flex-item-12">flex-item-12</div>
+							<div class="flex-item-8">flex-item-8</div>
+							<div class="flex-item">flex-item 自动填充宽度</div>
+							<div class="flex-item-8">flex-item-8</div>
+							<div class="flex-item-8">flex-item-8</div>
+							<div class="flex-item-8 flex-offset-8">flex-item-8 , flex-offset-8</div>
+						</div>
+					</div> -->
+				</div>
+				<div class="panel" style="font-size: 18px;">
+					<h2>Overview</h2>
+					<p>Cloud and flower is a 10 level puzzle game.The core game mechanic is the player need to control the cloud to 
+						combine the flower or flower blocks in a right way,so the cloud is able to arrive the cloud destination.
+					</p>
+					<p>It is a game assets course project.l finish it independently,from game design,making game assets,game development,preparing 
+						the promotion materials to launch it on the itch.
+					</p>			
+					<p>The game engine l choose to make this puzzle game is PuzzleScript.PuzzleScript is an open-source HTML5 puzzle game engine 
+						which can develop the puzzle game very fast. 
+					</p>	
+					<ol>
+						<ul>🕹 Independent Developme</ul>
+						<!-- <ul> Jan.2021-till now</ul> -->
+						<ul>💻 PuzzleScript</ul>
+
+						<!-- <li>通常，只有[栅格]可以直接放在[容器]中，而你的内容应该放在[栅格]里。但这不是必须的，直接把内容放在[容器]里也没问题。</li>
+						<li>如果一个[容器]里包含的[栅格]超过24格，多出的部分将另起一行。</li>
+						<li>IE的话只兼容IE10+，其他主流浏览器都支持，具体可以看：<a href="http://caniuse.com/#search=flex" target="_blank">兼容性</a></li>
+						<li>Flexbox有主轴，副轴的概念，flex-layout已经封装好了，你不需要懂得flexbox，也无需针对不同轴使用不同的class。<br>
+							不过，如果你对Flexbox有所了解的话，用起来会更顺手，推荐阮一峰的<a href="http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html">Flex 布局教程</a>
+						</li>
+						<li>与Bootstrap等栅格化不同的是：flex-layout不需要container，栅格本身不自带padding。</li> -->
+					</ol> 
+				</div>
+				<!-- <div class="panel">
+					<h2>优势</h2>
+					<p>flex-layout解决了css布局的不少问题，这里所说的大多在下面的Example里可以看到:</p>
+					<ol>
+						<li>应用一个class就可以垂直居中。</li>
+						<li>轻松实现多栏同高。</li>
+						<li>自动计算间距，实现等宽布局，不需要再计算margin。</li>
+						<li>支持自动填充剩余宽度，以往我们需要通过触发BFC来实现。</li>
+						<li>支持自动填充剩余高度，比如将footer置于底部。</li>
+						<li>随意调整[栅格]顺序，比如让main比sidebar提前渲染出来。</li>
+						<li>丰富的对齐方式：上、下、左、右、左上、右上、左下、右下。</li>
+					</ol>
+				</div> -->
+				<div id="usage" class="panel" style="font-size: 18px;">
+					<h2>Design Process</h2>
+					<!-- <div style="text-align: center;margin: 0 auto;">
+						<img src="image/cloudLevel.png" style="width: 60%;height: 50%;" >
+					</div> -->
+					<p>
+						<ul>
+							1.write one page game design document
+						</ul>
+						<ul>
+							2.decide the game aesthetics and moodboard
+						</ul>
+						<ul>
+							3.game character design
+						</ul>
+						<ul>
+							4.create game environments
+						</ul>
+						<ul>
+							5.level design
+						</ul>
+						<ul>
+							6.prototype
+						</ul>
+						<ul>
+							7.sound design(use built-in sound of PuzzleScripts)
+						</ul>
+						<ul>
+							8.prepare the promotion materials
+						</ul>
+						<ul>
+							9.publish and promote the game
+						</ul>
+						<p>	publish the game on the itch,and promote it on itch and reddit
+						</p>
+					</p>
+					<!-- <div style="text-align: center;margin: 0 auto;">
+						<img src="image/lowfi.png" style="width: 80%;">
+					</div>					 -->
+					<!-- <p>
+						After finishing the game design documents and prototypes ,our team will have a meeting with art,animation and teaching teams to discuss the initial design.
+						And their opinions were recorded in the files,we will iterate the game design documents and prototypes based on their feedback.
+						And after that,the art team will design the initial game arts.Our team needs to review the initial game arts with the teaching team and give our opinions.
+						After the second version of game arts are finished,the animation team will begin to design the animation for game.
+					</p> -->
+
+				</div>
+				<div id="responsive" class="panel" style="font-size: 18px;">
+
+					<!-- <h2>Iteration</h2>
+					<p>
+						After the project is shipped,the user research team will test the game with some targeted kids and parent.They will write a testing report based on
+						the observations and interviews.
+						They will share the testing reports with all related teams.
+						The game design team will iterate the game based on the results.
+					</p> -->
+
+				</div>
+				<div id="example" class="panel" style="font-size: 18px;">
+					<h2>Final product</h2>
+					<div style="text-align: center;margin: 0 auto;">
+						<img src="image/cloudlevel2.png" style="width: 80%;">
+					</div>
+					<p>You can try this game in the following link!!🕹 🕹</p>
+					<a href="https://zqchen.itch.io/cloud-flower">cloud and flower</a>
+
+				</div>
+				<a href="https://github.com/Coffcer/flex-layout" style="margin-right: 20px">Github</a>
+				<a href="#">返回顶部</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- <script src="assets/dist/js/bootstrap.bundle.min.js"></script> -->
+
+</body>
+</html>

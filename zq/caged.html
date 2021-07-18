@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>flex-layout</title>
+	<link rel="stylesheet" href="dist/flex-layout.css">
+	<link rel="stylesheet" href="example/layout.css">
+	<link rel="stylesheet" href="example/index.css">
+
+</head>
+<body>
+	<div class="m-container flex-row">
+		<div class="m-header flex-column flex-middle" >
+			<h1 class="logo">
+				<a href="album/rindex.html" >Home</a>
+			</h1>
+			<!-- <small class="subtitle">基于flexbox的栅格化布局库，提供更直观、丰富的布局方式</small> -->
+			<div class="menu">
+				<a href="https://github.com/Coffcer/flex-layout">Github</a>
+			</div>
+		</div>
+		<!-- <div class="m-header flex-column flex-middle" >
+			<h1 class="logo">
+				<a href="https://github.com/Coffcer/flex-layout" >Index</a>
+			</h1>
+			<div class="menu">
+				<a href="https://github.com/Coffcer/flex-layout">Github</a>
+			</div>
+		</div> -->
+		<div class="m-content flex-column flex-item">
+			<div class="m-sidebar" >
+				<ul class="m-nav" style="position: fixed;">
+					<li class="active">
+						<a href="#summary">Overview</a>
+					</li>
+					<li>
+						<a href="#usage">Game Rules</a>
+					</li>
+					<li>
+						<a href="#responsive">Design Process</a>
+					</li>
+					<li>
+						<a href="#example">Final product</a>
+					</li>
+				</ul>
+			</div>
+			<div class="m-main">
+				<div id="summary" class="panel">
+					<h2>A 2D Game Dev Team-Project:Caged</h2>
+					<!-- <p>flex-layout基于24个栅格布局，与传统栅格化的使用方式类同，但提供了更直观、丰富的布局方式。</p> -->
+					<div style="text-align: center;margin: 0 auto;">
+						<img src="image/caged1.jpeg" style="width: 80%;">
+					</div>					<!-- <div class="demo demo1">
+						<div class="flex-column">
+							<div class="flex-item-24">flex-item-24</div>
+							<div class="flex-item-12">flex-item-12</div>
+							<div class="flex-item-12">flex-item-12</div>
+							<div class="flex-item-8">flex-item-8</div>
+							<div class="flex-item">flex-item 自动填充宽度</div>
+							<div class="flex-item-8">flex-item-8</div>
+							<div class="flex-item-8">flex-item-8</div>
+							<div class="flex-item-8 flex-offset-8">flex-item-8 , flex-offset-8</div>
+						</div>
+					</div> -->
+				</div>
+				<div class="panel" style="font-size: 18px;">
+					<h2>Overview</h2>
+					<p>Caged is a short 2D Platformer game demo, in which the protagonist, being held captive for entertainment purposes, 
+						has to escape on a day when the caretaker forgets to close the cage.
+					</p>
+					<p>The idea was to raise awareness about animals in captivity by having the player experience their situations.</p>
+					<p>
+						l am the Lead Programmer of the game,mainly responsible for writing the balance system and winning or losing
+						condition of the game. l am also responsible for merging and reviewing code for other teammates.l also help
+						teammates to fix the bugs when they meet some problems.
+						l was also the project manager to collabrate with teammates to ship the project on time.
+					</p>
+
+					<ol>
+						<ul>🕹 Project manager and Lead Programmer</ul>
+						<ul>⏳ Oct 15.2020-Dec 06.2020</ul>
+						<ul>💻 Unity,Github,Photoshop,Final Cut Pro</ul>
+
+						<!-- <li>通常，只有[栅格]可以直接放在[容器]中，而你的内容应该放在[栅格]里。但这不是必须的，直接把内容放在[容器]里也没问题。</li>
+						<li>如果一个[容器]里包含的[栅格]超过24格，多出的部分将另起一行。</li>
+						<li>IE的话只兼容IE10+，其他主流浏览器都支持，具体可以看：<a href="http://caniuse.com/#search=flex" target="_blank">兼容性</a></li>
+						<li>Flexbox有主轴，副轴的概念，flex-layout已经封装好了，你不需要懂得flexbox，也无需针对不同轴使用不同的class。<br>
+							不过，如果你对Flexbox有所了解的话，用起来会更顺手，推荐阮一峰的<a href="http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html">Flex 布局教程</a>
+						</li>
+						<li>与Bootstrap等栅格化不同的是：flex-layout不需要container，栅格本身不自带padding。</li> -->
+					</ol> 
+				</div>
+				<!-- <div class="panel">
+					<h2>优势</h2>
+					<p>flex-layout解决了css布局的不少问题，这里所说的大多在下面的Example里可以看到:</p>
+					<ol>
+						<li>应用一个class就可以垂直居中。</li>
+						<li>轻松实现多栏同高。</li>
+						<li>自动计算间距，实现等宽布局，不需要再计算margin。</li>
+						<li>支持自动填充剩余宽度，以往我们需要通过触发BFC来实现。</li>
+						<li>支持自动填充剩余高度，比如将footer置于底部。</li>
+						<li>随意调整[栅格]顺序，比如让main比sidebar提前渲染出来。</li>
+						<li>丰富的对齐方式：上、下、左、右、左上、右上、左下、右下。</li>
+					</ol>
+				</div> -->
+				<div id="usage" class="panel" style="font-size: 18px;">
+					<h2>Game Rules</h2>
+					<div style="text-align: center;margin: 0 auto;">
+						<img src="image/caged2.png" style="width: 80%;">
+					</div>
+					<p>
+					</p>				
+					<p>
+						The player needs to control the main character to escape the cage.In this process,he needs to prevent the health,entertainment and starvation value
+						from dropping to 0.If any of these values drop to 0.The game will end.						
+					</p>
+					<p>	The entertainment value and starvation will be descreased 1 points each 30 seconds.Player can control the character to entertain the animals to recover
+						the values.
+						The starvation value will be descreased 1 points if the player was hurt by the bricks or spikes.</p>
+					<p>The main challenges for the player including:Keeping up people’s happiness, managing stamina, completing obstacle course in limited time and escaping zoo.
+					</p>
+
+				</div>
+				<div id="responsive" class="panel" style="font-size: 18px;">
+
+					<h2>Design Process</h2>
+					<!-- <p>Our game design team collabrated with the teaching team,the teaching team will first provide us with the Mathematical topic and knowledge.
+						Based on the knowledge,we will brainstom the game ideas which help kids master those knowledge.After the brainstom,we decide the game Core
+						Mechanics and themes.Each game designer will be responsive for writing the game documents for the specific knowledge.
+					</p> -->
+					<p>
+						We first brainstom ideas.Then we write the game concept documents and game art moodboard.And we assign tasks based on the personal interests and advantages.
+						We use the Github repository to collabrate with each other and manage the game assets,game music,and code.
+						After the game demo is finished,we also test it in the group.
+						We also make a game trailer for this one level game.
+					</p>
+
+				</div>
+				<div id="example" class="panel" style="font-size: 18px;">
+					<h2>Final product</h2>
+					<div style="text-align: center;margin: 0 auto;">
+						<video width="80%" poster="image/caged3.jpg" controls>
+							<source src="video/Caged.mp4"  type="video/mp4">
+							您的浏览器不支持 HTML5 video 标签。
+						  </video>
+					</div>
+					<p>
+						We make this game open source,so you can download the source code of the project.
+					</p>
+					<p>	And you can also download the game demo to play,the windows version is provided.The following is the link.
+					</p>
+
+
+				</div>
+				<a href="https://github.com/Coffcer/flex-layout" style="margin-right: 20px">Github</a>
+				<a href="#">返回顶部</a>
+			</div>
+		</div>
+	</div>
+
+	
+</body>
+</html>

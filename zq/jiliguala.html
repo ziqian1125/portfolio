@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>flex-layout</title>
+	<link rel="stylesheet" href="dist/flex-layout.css">
+	<link rel="stylesheet" href="example/layout.css">
+	<link rel="stylesheet" href="example/index.css">
+</head>
+<body>
+	<div class="m-container flex-row">
+		<div class="m-header flex-column flex-middle" >
+			<h1 class="logo">
+				<a href="album/rindex.html" >Home</a>
+			</h1>
+			
+			<!-- <small class="subtitle">基于flexbox的栅格化布局库，提供更直观、丰富的布局方式</small> -->
+			<div class="menu">
+				<a href="https://github.com/Coffcer/flex-layout">Github</a>
+			</div>
+		</div>
+		<div class="m-content flex-column flex-item">
+			<div class="m-sidebar" >
+				<ul class="m-nav" style="position: fixed;">
+					<li class="active">
+						<a href="#summary">Overview</a>
+					</li>
+					<li>
+						<a href="#usage">Design Process</a>
+					</li>
+					<li>
+						<a href="#responsive">Iteration</a>
+					</li>
+					<li>
+						<a href="#example">Final product</a>
+					</li>
+				</ul>
+			</div>
+			<div class="m-main">
+				<div id="summary" class="panel">
+					<h2>Jiliguala Mathematical Game Designer Internship</h2>
+					<!-- <p>flex-layout基于24个栅格布局，与传统栅格化的使用方式类同，但提供了更直观、丰富的布局方式。</p> -->
+					<div style="text-align: center;margin: 0 auto;">
+						<img src="image/period.png" style="width: 80%;">
+					</div>					<!-- <div class="demo demo1">
+						<div class="flex-column">
+							<div class="flex-item-24">flex-item-24</div>
+							<div class="flex-item-12">flex-item-12</div>
+							<div class="flex-item-12">flex-item-12</div>
+							<div class="flex-item-8">flex-item-8</div>
+							<div class="flex-item">flex-item 自动填充宽度</div>
+							<div class="flex-item-8">flex-item-8</div>
+							<div class="flex-item-8">flex-item-8</div>
+							<div class="flex-item-8 flex-offset-8">flex-item-8 , flex-offset-8</div>
+						</div>
+					</div> -->
+				</div>
+				<div class="panel" style="font-size: 18px;">
+					<h2>Overview</h2>
+					<p>From Jan 2021 till now,l joined Jiligua creative content department as a game design intern.</p>
+					<p>l joined 2 teams successively.One team is responsible for designing Mathematical game for 5 years old kids,
+						another team's target user is 3 years old kdis.
+						In this 2 teams,l participant in designing Mathematical game and gamification course for kids.
+						All the games or course l designed for the project were shipped.
+					</p>
+
+					<ol>
+						<ul>🕹 game design Internship</ul>
+						<ul>⏳ Jan.2021-till now</ul>
+						<ul>💻 Figma,Cocos Creator,Audacity,Source Tree,Gitlab</ul>
+
+						<!-- <li>通常，只有[栅格]可以直接放在[容器]中，而你的内容应该放在[栅格]里。但这不是必须的，直接把内容放在[容器]里也没问题。</li>
+						<li>如果一个[容器]里包含的[栅格]超过24格，多出的部分将另起一行。</li>
+						<li>IE的话只兼容IE10+，其他主流浏览器都支持，具体可以看：<a href="http://caniuse.com/#search=flex" target="_blank">兼容性</a></li>
+						<li>Flexbox有主轴，副轴的概念，flex-layout已经封装好了，你不需要懂得flexbox，也无需针对不同轴使用不同的class。<br>
+							不过，如果你对Flexbox有所了解的话，用起来会更顺手，推荐阮一峰的<a href="http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html">Flex 布局教程</a>
+						</li>
+						<li>与Bootstrap等栅格化不同的是：flex-layout不需要container，栅格本身不自带padding。</li> -->
+					</ol> 
+				</div>
+				<!-- <div class="panel">
+					<h2>优势</h2>
+					<p>flex-layout解决了css布局的不少问题，这里所说的大多在下面的Example里可以看到:</p>
+					<ol>
+						<li>应用一个class就可以垂直居中。</li>
+						<li>轻松实现多栏同高。</li>
+						<li>自动计算间距，实现等宽布局，不需要再计算margin。</li>
+						<li>支持自动填充剩余宽度，以往我们需要通过触发BFC来实现。</li>
+						<li>支持自动填充剩余高度，比如将footer置于底部。</li>
+						<li>随意调整[栅格]顺序，比如让main比sidebar提前渲染出来。</li>
+						<li>丰富的对齐方式：上、下、左、右、左上、右上、左下、右下。</li>
+					</ol>
+				</div> -->
+				<div id="usage" class="panel" style="font-size: 18px;">
+					<h2>Design Process</h2>
+					<div style="text-align: center;margin: 0 auto;">
+						<img src="image/design process.png" style="width: 80%;">
+					</div>
+					<p>Our game design team collabrated with the teaching team,the teaching team will first provide us with the Mathematical topic and knowledge.
+						Based on the knowledge,we will brainstom the game ideas which help kids master those knowledge.After the brainstom,we decide the game Core
+						Mechanics and themes.Each game designer will be responsive for writing the game design documents for the specific knowledge.l also need to draw the
+						low or high-fi prototype for game. 
+					</p>
+					<div style="text-align: center;margin: 0 auto;">
+						<img src="image/lowfi.png" style="width: 80%;">
+					</div>					<p>
+						After finishing the game design documents and prototypes ,our team will have a meeting with art,animation and teaching teams to discuss the initial design.
+						And their opinions were recorded in the files,we will iterate the game design documents and prototypes based on their feedback.
+						And after that,the art team will design the initial game arts.Our team needs to review the initial game arts with the teaching team and give our opinions.
+						After the second version of game arts are finished,the animation team will begin to design the animation for game.
+					</p>
+					<p>
+						If the current game editor doesn't have the game functions we need,we also need to write the development requirements documents and submit 
+						the files to development team.
+					</p>
+					<p>
+						l also need to submit game audio and music needs to the game music design team,and review or edit these sound effects and musics.
+					</p>
+					<p>
+						If the game arts,animation and game editor functionality are all set,l will begin to configure the game using Cocos Creator.After finishing that,l will
+						upload all the game assets and codes to the company's game platform.
+					</p>
+					<p>
+						Our team leader and testing team will be responsible for testing the game in the different testing environments.They will give me the feedback,l need to fix
+						these bugs.
+					</p>
+				</div>
+				<div id="responsive" class="panel" style="font-size: 18px;">
+
+					<h2>Iteration</h2>
+					<!-- <p>Our game design team collabrated with the teaching team,the teaching team will first provide us with the Mathematical topic and knowledge.
+						Based on the knowledge,we will brainstom the game ideas which help kids master those knowledge.After the brainstom,we decide the game Core
+						Mechanics and themes.Each game designer will be responsive for writing the game documents for the specific knowledge.
+					</p> -->
+					<p>
+						After the project is shipped,the user research team will test the game with some targeted kids and parent.They will write a testing report based on
+						the observations and interviews.
+						They will share the testing reports with all related teams.
+						The game design team will iterate the game based on the results.
+					</p>
+
+				</div>
+				<div id="example" class="panel" style="font-size: 18px;">
+					<h2>Final product</h2>
+					<div style="text-align: center;margin: 0 auto;">
+						<img src="image/all.png" style="width: 80%;">
+					</div>
+					<h3>Visit The Zoo</h3>
+					<p>The core game Mechanics of this game is the player need to find the right animals according to requirements.
+					   The aim of this game is to teach 5 years old kids the basic unit of measurement:cm and m,using the familar 
+					   animals in the zoo.
+					</p>
+
+					<div style="text-align: center;margin: 0 auto;">
+						<img src="image/measure.png" style="width: 80%;">
+					</div>
+
+					<h3>Magic Party</h3>
+					<p>The core game Mechanics of this game is the kids need to remember the position of the flowers,after the flowers
+						hide into the hats and exchange the position.
+					 </p>
+					 <p>This game aims to teach the kids the concept of periodic law.</p>
+					<div style="text-align: center;margin: 0 auto;">
+						<img src="image/periodgame.png" style="width: 80%;">
+					</div>
+
+
+					<h3>Tangram of marine animals</h3>
+					<p>The core game Mechanics of this game is the kids need to complete the tangram,by rotating、flippping or moving.
+					   The main goal of this game is to teach the kids about shape rotate、flip and move.
+					</p>
+
+					<div style="text-align: center;margin: 0 auto;">
+						<img src="image/sea.png" style="width: 80%;">
+					</div>
+
+					<h3>Winter</h3>
+					<p>This is a gamification course which teaches the kids about Ellipse and properties of ellipse.
+					 </p>
+					 <p>The kids need to choose the right ice based on the question.After choosing the right ice,
+						 the shape monster will come out from the ice and give a performance.
+					 </p>
+					<div style="text-align: center;margin: 0 auto;">
+						<img src="image/ice.png" style="width: 80%;">
+					</div>
+
+				</div>
+				<a href="https://github.com/Coffcer/flex-layout" style="margin-right: 20px">Github</a>
+				<a href="#">返回顶部</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
